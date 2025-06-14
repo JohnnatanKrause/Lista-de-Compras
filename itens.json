@@ -60,5 +60,5 @@
   { "id": 59, "nome": "Lenço Umedecido", "categoria": "Higiene", "unidade": "pacote" },
   { "id": 60, "nome": "Farofa", "categoria": "Grãos e Farináceos", "unidade": "pacote" },
   { "id": 61, "nome": "Multiuso", "categoria": "Limpeza", "unidade": "frasco" },
-  { "id": 62, "nome": "Sabão para Louças","categoria": "Limpeza", "unidade": "frasco" },
+  { "id": 62, "nome": "Sabão para Louças","categoria": "Limpeza", "unidade": "frasco" }
 ]
