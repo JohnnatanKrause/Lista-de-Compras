@@ -2,309 +2,319 @@
     {
         "id": 1,
         "nome": "Filé Mignon",
-        "emoji": "🥩",
         "categoria": "Carnes Bovinas",
         "unidade": "kg"
     },
     {
         "id": 2,
         "nome": "Contrafilé",
-        "emoji": "🥩",
         "categoria": "Carnes Bovinas",
         "unidade": "kg"
     },
     {
         "id": 3,
         "nome": "Alcatra",
-        "emoji": "🥩",
         "categoria": "Carnes Bovinas",
         "unidade": "kg"
     },
     {
         "id": 4,
         "nome": "Carne Moída",
-        "emoji": "🥩",
         "categoria": "Carnes Bovinas",
         "unidade": "kg"
     },
     {
         "id": 5,
         "nome": "Bife",
-        "emoji": "🥩",
         "categoria": "Carnes Bovinas",
         "unidade": "kg"
     },
     {
         "id": 6,
         "nome": "Carne de Panela",
-        "emoji": "🍲",
         "categoria": "Carnes Bovinas",
         "unidade": "kg"
     },
     {
         "id": 7,
         "nome": "Costelinha Suína",
-        "emoji": "🐖",
         "categoria": "Carnes Suínas",
         "unidade": "kg"
     },
     {
         "id": 8,
         "nome": "Peito de Frango",
-        "emoji": "🍗",
         "categoria": "Carnes de Frango",
         "unidade": "kg"
     },
     {
         "id": 9,
         "nome": "Coxa de Frango",
-        "emoji": "🍗",
         "categoria": "Carnes de Frango",
         "unidade": "kg"
     },
     {
         "id": 10,
         "nome": "Sobrecoxa de Frango",
-        "emoji": "🍗",
         "categoria": "Carnes de Frango",
         "unidade": "kg"
     },
     {
         "id": 11,
         "nome": "Tilápia",
-        "emoji": "🐟",
         "categoria": "Peixes",
         "unidade": "kg"
     },
     {
         "id": 12,
         "nome": "Camarão",
-        "emoji": "🦐",
         "categoria": "Frutos do Mar",
         "unidade": "kg"
     },
     {
         "id": 13,
         "nome": "Banana",
-        "emoji": "🍌",
         "categoria": "Frutas",
         "unidade": "kg"
     },
     {
         "id": 14,
         "nome": "Maçã",
-        "emoji": "🍏",
         "categoria": "Frutas",
         "unidade": "kg"
     },
     {
         "id": 15,
-        "nome": "Limão",
-        "emoji": "🍋",
+        "nome": "Caqui",
         "categoria": "Frutas",
-        "unidade": "un"
+        "unidade": "kg"
     },
     {
         "id": 16,
-        "nome": "Laranja",
-        "emoji": "🍊",
+        "nome": "Limão",
         "categoria": "Frutas",
         "unidade": "un"
     },
     {
         "id": 17,
-        "nome": "Uva",
-        "emoji": "🍇",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 18,
-        "nome": "Abacaxi",
-        "emoji": "🍍",
+        "nome": "Laranja",
         "categoria": "Frutas",
         "unidade": "un"
     },
     {
+        "id": 18,
+        "nome": "Uva",
+        "categoria": "Frutas",
+        "unidade": "kg"
+    },
+    {
         "id": 19,
-        "nome": "Mamão",
-        "emoji": "🥭",
+        "nome": "Abacaxi",
         "categoria": "Frutas",
         "unidade": "un"
     },
     {
         "id": 20,
+        "nome": "Mamão",
+        "categoria": "Frutas",
+        "unidade": "un"
+    },
+    {
+        "id": 21,
         "nome": "Morango",
-        "emoji": "🍓",
         "categoria": "Frutas",
         "unidade": "kg"
     },
     {
-        "id": 21,
-        "nome": "Alface",
-        "emoji": "🥬",
-        "categoria": "Hortifruti",
-        "unidade": "un"
-    },
-    {
         "id": 22,
-        "nome": "Tomate",
-        "emoji": "🍅",
-        "categoria": "Hortifruti",
+        "nome": "Abacate",
+        "categoria": "Frutas",
         "unidade": "kg"
     },
     {
         "id": 23,
-        "nome": "Cenoura",
-        "emoji": "🥕",
+        "nome": "Alface",
         "categoria": "Hortifruti",
-        "unidade": "kg"
+        "unidade": "un"
     },
     {
         "id": 24,
-        "nome": "Batata",
-        "emoji": "🥔",
+        "nome": "Tomate",
         "categoria": "Hortifruti",
         "unidade": "kg"
     },
     {
         "id": 25,
-        "nome": "Cebola",
-        "emoji": "🧅",
+        "nome": "Cenoura",
         "categoria": "Hortifruti",
         "unidade": "kg"
     },
     {
         "id": 26,
-        "nome": "Pimentão",
-        "emoji": "🌶️",
+        "nome": "Batata",
         "categoria": "Hortifruti",
-        "unidade": "un"
+        "unidade": "kg"
     },
     {
         "id": 27,
-        "nome": "Brócolis",
-        "emoji": "🥦",
+        "nome": "Cebola",
         "categoria": "Hortifruti",
-        "unidade": "un"
+        "unidade": "kg"
     },
     {
         "id": 28,
-        "nome": "Abóbora",
-        "emoji": "🎃",
+        "nome": "Alho",
         "categoria": "Hortifruti",
         "unidade": "kg"
     },
     {
         "id": 29,
         "nome": "Arroz",
-        "emoji": "🍚",
         "categoria": "Grãos e Farináceos",
         "unidade": "kg"
     },
     {
         "id": 30,
         "nome": "Feijão",
-        "emoji": "🥣",
         "categoria": "Grãos e Farináceos",
         "unidade": "kg"
     },
     {
         "id": 31,
         "nome": "Farinha de trigo",
-        "emoji": "🌾",
         "categoria": "Grãos e Farináceos",
         "unidade": "kg"
     },
     {
         "id": 32,
         "nome": "Macarrão",
-        "emoji": "🍝",
         "categoria": "Grãos e Farináceos",
         "unidade": "pacote"
     },
     {
         "id": 33,
+        "nome": "Bolacha",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "pacote"
+    },
+    {
+        "id": 34,
         "nome": "Pão",
-        "emoji": "🥖",
         "categoria": "Padaria",
         "unidade": "un"
     },
     {
-        "id": 34,
-        "nome": "Bolo de caixinha",
-        "emoji": "🍰",
-        "categoria": "Doces e Sobremesas",
-        "unidade": "un"
-    },
-    {
         "id": 35,
-        "nome": "Creme de leite",
-        "emoji": "🥛",
-        "categoria": "Doces e Sobremesas",
-        "unidade": "lata"
+        "nome": "Ketchup",
+        "categoria": "Condimentos",
+        "unidade": "frasco"
     },
     {
         "id": 36,
-        "nome": "Leite condensado",
-        "emoji": "🥛",
-        "categoria": "Doces e Sobremesas",
-        "unidade": "lata"
+        "nome": "Maionese",
+        "categoria": "Condimentos",
+        "unidade": "frasco"
     },
     {
         "id": 37,
-        "nome": "Shampoo",
-        "emoji": "🧴",
-        "categoria": "Higiene",
+        "nome": "Molho de Tomate",
+        "categoria": "Condimentos",
         "unidade": "frasco"
     },
     {
         "id": 38,
-        "nome": "Condicionador",
-        "emoji": "🧴",
-        "categoria": "Higiene",
-        "unidade": "frasco"
+        "nome": "Açafrão",
+        "categoria": "Temperos",
+        "unidade": "pacote"
     },
     {
         "id": 39,
-        "nome": "Papel higiênico",
-        "emoji": "🧻",
-        "categoria": "Higiene",
+        "nome": "Orégano",
+        "categoria": "Temperos",
         "unidade": "pacote"
     },
     {
         "id": 40,
-        "nome": "Água mineral com gás",
-        "emoji": "💧",
-        "categoria": "Bebidas",
-        "unidade": "garrafa"
+        "nome": "Pimenta do Reino",
+        "categoria": "Temperos",
+        "unidade": "pacote"
     },
     {
         "id": 41,
-        "nome": "Café",
-        "emoji": "☕",
-        "categoria": "Bebidas",
+        "nome": "Paprica",
+        "categoria": "Temperos",
         "unidade": "pacote"
     },
     {
         "id": 42,
-        "nome": "Chá",
-        "emoji": "🍵",
-        "categoria": "Bebidas",
+        "nome": "Chimichurri",
+        "categoria": "Temperos",
         "unidade": "pacote"
     },
     {
         "id": 43,
-        "nome": "Suco natural",
-        "emoji": "🥤",
-        "categoria": "Bebidas",
-        "unidade": "litro"
+        "nome": "Queijo Ralado",
+        "categoria": "Laticínios",
+        "unidade": "pacote"
     },
     {
         "id": 44,
-        "nome": "Refrigerante",
-        "emoji": "🥤",
-        "categoria": "Bebidas",
-        "unidade": "litro"
+        "nome": "Queijo Fatiado",
+        "categoria": "Laticínios",
+        "unidade": "pacote"
+    },
+    {
+        "id": 45,
+        "nome": "Presunto Fatiado",
+        "categoria": "Carnes Frias",
+        "unidade": "pacote"
+    },
+    {
+        "id": 46,
+        "nome": "Calabresa",
+        "categoria": "Carnes Frias",
+        "unidade": "kg"
+    },
+    {
+        "id": 47,
+        "nome": "Bucha de Lavar Louça",
+        "categoria": "Limpeza",
+        "unidade": "un"
+    },
+    {
+        "id": 48,
+        "nome": "Sabão de Lavar Roupa",
+        "categoria": "Limpeza",
+        "unidade": "pacote"
+    },
+    {
+        "id": 49,
+        "nome": "Amaciante",
+        "categoria": "Limpeza",
+        "unidade": "frasco"
+    },
+    {
+        "id": 50,
+        "nome": "Detergente",
+        "categoria": "Limpeza",
+        "unidade": "frasco"
+    },
+    {
+        "id": 51,
+        "nome": "Limpa Vidro",
+        "categoria": "Limpeza",
+        "unidade": "frasco"
+    },
+    {
+        "id": 52,
+        "nome": "Pato para Vaso",
+        "categoria": "Limpeza",
+        "unidade": "frasco"
+    },
+    {
+        "id": 53,
+        "nome": "Bombril",
+        "categoria": "Limpeza",
+        "unidade": "pacote"
     }
 ]
