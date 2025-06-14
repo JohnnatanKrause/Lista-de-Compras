@@ -53,7 +53,13 @@ input[type="checkbox"] {
 input[type="number"] {
     width: 60px;
     text-align: center;
+.logo {
+    width: 50px;
+    height: 50px;
 }
+}
+
+
 
 @media (max-width: 600px) {
     .item-container {
