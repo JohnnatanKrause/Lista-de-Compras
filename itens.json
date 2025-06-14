@@ -1,320 +1,64 @@
 [
-    {
-        "id": 1,
-        "nome": "Filé Mignon",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 2,
-        "nome": "Contrafilé",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 3,
-        "nome": "Alcatra",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 4,
-        "nome": "Carne Moída",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 5,
-        "nome": "Bife",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 6,
-        "nome": "Carne de Panela",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 7,
-        "nome": "Costelinha Suína",
-        "categoria": "Carnes Suínas",
-        "unidade": "kg"
-    },
-    {
-        "id": 8,
-        "nome": "Peito de Frango",
-        "categoria": "Carnes de Frango",
-        "unidade": "kg"
-    },
-    {
-        "id": 9,
-        "nome": "Coxa de Frango",
-        "categoria": "Carnes de Frango",
-        "unidade": "kg"
-    },
-    {
-        "id": 10,
-        "nome": "Sobrecoxa de Frango",
-        "categoria": "Carnes de Frango",
-        "unidade": "kg"
-    },
-    {
-        "id": 11,
-        "nome": "Tilápia",
-        "categoria": "Peixes",
-        "unidade": "kg"
-    },
-    {
-        "id": 12,
-        "nome": "Camarão",
-        "categoria": "Frutos do Mar",
-        "unidade": "kg"
-    },
-    {
-        "id": 13,
-        "nome": "Banana",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 14,
-        "nome": "Maçã",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 15,
-        "nome": "Caqui",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 16,
-        "nome": "Limão",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 17,
-        "nome": "Laranja",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 18,
-        "nome": "Uva",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 19,
-        "nome": "Abacaxi",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 20,
-        "nome": "Mamão",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 21,
-        "nome": "Morango",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 22,
-        "nome": "Abacate",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 23,
-        "nome": "Alface",
-        "categoria": "Hortifruti",
-        "unidade": "un"
-    },
-    {
-        "id": 24,
-        "nome": "Tomate",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 25,
-        "nome": "Cenoura",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 26,
-        "nome": "Batata",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 27,
-        "nome": "Cebola",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 28,
-        "nome": "Alho",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 29,
-        "nome": "Arroz",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "kg"
-    },
-    {
-        "id": 30,
-        "nome": "Feijão",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "kg"
-    },
-    {
-        "id": 31,
-        "nome": "Farinha de trigo",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "kg"
-    },
-    {
-        "id": 32,
-        "nome": "Macarrão",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 33,
-        "nome": "Bolacha",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 34,
-        "nome": "Pão",
-        "categoria": "Padaria",
-        "unidade": "un"
-    },
-    {
-        "id": 35,
-        "nome": "Ketchup",
-        "categoria": "Condimentos",
-        "unidade": "frasco"
-    },
-    {
-        "id": 36,
-        "nome": "Maionese",
-        "categoria": "Condimentos",
-        "unidade": "frasco"
-    },
-    {
-        "id": 37,
-        "nome": "Molho de Tomate",
-        "categoria": "Condimentos",
-        "unidade": "frasco"
-    },
-    {
-        "id": 38,
-        "nome": "Açafrão",
-        "categoria": "Temperos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 39,
-        "nome": "Orégano",
-        "categoria": "Temperos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 40,
-        "nome": "Pimenta do Reino",
-        "categoria": "Temperos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 41,
-        "nome": "Paprica",
-        "categoria": "Temperos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 42,
-        "nome": "Chimichurri",
-        "categoria": "Temperos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 43,
-        "nome": "Queijo Ralado",
-        "categoria": "Laticínios",
-        "unidade": "pacote"
-    },
-    {
-        "id": 44,
-        "nome": "Queijo Fatiado",
-        "categoria": "Laticínios",
-        "unidade": "pacote"
-    },
-    {
-        "id": 45,
-        "nome": "Presunto Fatiado",
-        "categoria": "Carnes Frias",
-        "unidade": "pacote"
-    },
-    {
-        "id": 46,
-        "nome": "Calabresa",
-        "categoria": "Carnes Frias",
-        "unidade": "kg"
-    },
-    {
-        "id": 47,
-        "nome": "Bucha de Lavar Louça",
-        "categoria": "Limpeza",
-        "unidade": "un"
-    },
-    {
-        "id": 48,
-        "nome": "Sabão de Lavar Roupa",
-        "categoria": "Limpeza",
-        "unidade": "pacote"
-    },
-    {
-        "id": 49,
-        "nome": "Amaciante",
-        "categoria": "Limpeza",
-        "unidade": "frasco"
-    },
-    {
-        "id": 50,
-        "nome": "Detergente",
-        "categoria": "Limpeza",
-        "unidade": "frasco"
-    },
-    {
-        "id": 51,
-        "nome": "Limpa Vidro",
-        "categoria": "Limpeza",
-        "unidade": "frasco"
-    },
-    {
-        "id": 52,
-        "nome": "Pato para Vaso",
-        "categoria": "Limpeza",
-        "unidade": "frasco"
-    },
-    {
-        "id": 53,
-        "nome": "Bombril",
-        "categoria": "Limpeza",
-        "unidade": "pacote"
-    }
+  { "id": 1, "nome": "Filé Mignon", "categoria": "Carnes Bovinas", "unidade": "kg" },
+  { "id": 2, "nome": "Contra filé", "categoria": "Carnes Bovinas", "unidade": "kg" },
+  { "id": 3, "nome": "Alcatra", "categoria": "Carnes Bovinas", "unidade": "kg" },
+  { "id": 4, "nome": "Carne Moída", "categoria": "Carnes Bovinas", "unidade": "kg" },
+  { "id": 5, "nome": "Bife", "categoria": "Carnes Bovinas", "unidade": "kg" },
+  { "id": 6, "nome": "Carne de Panela", "categoria": "Carnes Bovinas", "unidade": "kg" },
+  { "id": 7, "nome": "Costelinha Suína", "categoria": "Carnes Suínas", "unidade": "kg" },
+  { "id": 8, "nome": "Peito de Frango", "categoria": "Carnes de Frango", "unidade": "kg" },
+  { "id": 9, "nome": "Coxa de Frango", "categoria": "Carnes de Frango", "unidade": "kg" },
+  { "id": 10, "nome": "Sobrecoxa de Frango", "categoria": "Carnes de Frango", "unidade": "kg" },
+  { "id": 11, "nome": "Tilápia", "categoria": "Peixes", "unidade": "kg" },
+  { "id": 12, "nome": "Camarão", "categoria": "Frutos do Mar", "unidade": "kg" },
+  { "id": 13, "nome": "Banana", "categoria": "Frutas", "unidade": "kg" },
+  { "id": 14, "nome": "Maçã", "categoria": "Frutas", "unidade": "kg" },
+  { "id": 15, "nome": "Caqui", "categoria": "Frutas", "unidade": "kg" },
+  { "id": 16, "nome": "Limão", "categoria": "Frutas", "unidade": "un" },
+  { "id": 17, "nome": "Laranja", "categoria": "Frutas", "unidade": "un" },
+  { "id": 18, "nome": "Uva", "categoria": "Frutas", "unidade": "kg" },
+  { "id": 19, "nome": "Abacaxi", "categoria": "Frutas", "unidade": "un" },
+  { "id": 20, "nome": "Mamão", "categoria": "Frutas", "unidade": "un" },
+  { "id": 21, "nome": "Morango", "categoria": "Frutas", "unidade": "kg" },
+  { "id": 22, "nome": "Abacate", "categoria": "Frutas", "unidade": "kg" },
+  { "id": 23, "nome": "Alface", "categoria": "Hortifruti", "unidade": "un" },
+  { "id": 24, "nome": "Tomate", "categoria": "Hortifruti", "unidade": "kg" },
+  { "id": 25, "nome": "Cenoura", "categoria": "Hortifruti", "unidade": "kg" },
+  { "id": 26, "nome": "Batata", "categoria": "Hortifruti", "unidade": "kg" },
+  { "id": 27, "nome": "Cebola", "categoria": "Hortifruti", "unidade": "kg" },
+  { "id": 28, "nome": "Alho", "categoria": "Hortifruti", "unidade": "kg" },
+  { "id": 29, "nome": "Arroz", "categoria": "Grãos e Farináceos", "unidade": "kg" },
+  { "id": 30, "nome": "Feijão", "categoria": "Grãos e Farináceos", "unidade": "kg" },
+  { "id": 31, "nome": "Farinha de trigo", "categoria": "Grãos e Farináceos", "unidade": "kg" },
+  { "id": 32, "nome": "Macarrão", "categoria": "Grãos e Farináceos", "unidade": "pacote" },
+  { "id": 33, "nome": "Bolacha", "categoria": "Grãos e Farináceos", "unidade": "pacote" },
+  { "id": 34, "nome": "Milho para Pipoca", "categoria": "Grãos e Farináceos", "unidade": "kg" },
+  { "id": 35, "nome": "Pão", "categoria": "Padaria", "unidade": "un" },
+  { "id": 36, "nome": "Ketchup", "categoria": "Condimentos", "unidade": "frasco" },
+  { "id": 37, "nome": "Maionese", "categoria": "Condimentos", "unidade": "frasco" },
+  { "id": 38, "nome": "Molho de Tomate", "categoria": "Condimentos", "unidade": "frasco" },
+  { "id": 39, "nome": "Óleo", "categoria": "Condimentos", "unidade": "litro" },
+  { "id": 40, "nome": "Açafrão", "categoria": "Temperos", "unidade": "pacote" },
+  { "id": 41, "nome": "Orégano", "categoria": "Temperos", "unidade": "pacote" },
+  { "id": 42, "nome": "Pimenta do Reino", "categoria": "Temperos", "unidade": "pacote" },
+  { "id": 43, "nome": "Paprica", "categoria": "Temperos", "unidade": "pacote" },
+  { "id": 44, "nome": "Chimichurri", "categoria": "Temperos", "unidade": "pacote" },
+  { "id": 45, "nome": "Queijo Ralado", "categoria": "Laticínios", "unidade": "pacote" },
+  { "id": 46, "nome": "Queijo Fatiado", "categoria": "Laticínios", "unidade": "pacote" },
+  { "id": 47, "nome": "Presunto Fatiado", "categoria": "Carnes Frias", "unidade": "pacote" },
+  { "id": 48, "nome": "Calabresa", "categoria": "Carnes Frias", "unidade": "kg" },
+  { "id": 49, "nome": "Bucha de Lavar Louça", "categoria": "Limpeza", "unidade": "un" },
+  { "id": 50, "nome": "Sabão para Roupa", "categoria": "Limpeza", "unidade": "pacote" },
+  { "id": 51, "nome": "Amaciante", "categoria": "Limpeza", "unidade": "frasco" },
+  { "id": 52, "nome": "Detergente", "categoria": "Limpeza", "unidade": "frasco" },
+  { "id": 53, "nome": "Limpa Vidro", "categoria": "Limpeza", "unidade": "frasco" },
+  { "id": 54, "nome": "Pato", "categoria": "Limpeza", "unidade": "frasco" },
+  { "id": 55, "nome": "Bombril", "categoria": "Limpeza", "unidade": "pacote" },
+  { "id": 56, "nome": "Açúcar", "categoria": "Alimentos", "unidade": "kg" },
+  { "id": 57, "nome": "Sal", "categoria": "Alimentos", "unidade": "kg" },
+  { "id": 58, "nome": "Ovo", "categoria": "Alimentos", "unidade": "dúzia" },
+  { "id": 59, "nome": "Lenço Umedecido", "categoria": "Higiene", "unidade": "pacote" },
+  { "id": 60, "nome": "Farofa", "categoria": "Grãos e Farináceos", "unidade": "pacote" },
+  { "id": 61, "nome": "Multiuso", "categoria": "Limpeza", "unidade": "frasco" },
+  { "id": 62, "nome": "Sabão para Louças","categoria": "Limpeza", "unidade": "frasco" },
 ]
