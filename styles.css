@@ -1,7 +1,10 @@
 body {
+    background-image: url('plano de fundo.png');
+    background-size: cover; /* Ajusta a imagem para cobrir a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
     font-family: Arial, sans-serif;
     text-align: center;
-    background: #83be0e;
 }
 
 .container {
