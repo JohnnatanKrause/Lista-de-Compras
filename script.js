@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("itens.json")
         .then(response => response.json())
         .then(data => {
-            // Ordenar por categoria antes de exibir
+            // Ordena por categoria
             data.sort((a, b) => a.categoria.localeCompare(b.categoria));
 
             const lista = document.getElementById("lista");
             let categoriaAtual = "";
 
             data.forEach(item => {
-                // Adiciona um cabeçalho para cada nova categoria
+                // Adiciona um cabeçalho para cada categoria
                 if (item.categoria !== categoriaAtual) {
                     categoriaAtual = item.categoria;
                     let header = document.createElement("h3");
@@ -18,18 +18,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
 
                 let li = document.createElement("li");
-                li.style.listStyleType = "none"; // Remove os pontos da lista
+                li.classList.add("lista-item"); // Classe para alinhar no CSS
                 
+                let container = document.createElement("div");
+                container.classList.add("item-container");
+
                 let checkbox = document.createElement("input");
                 checkbox.type = "checkbox";
                 checkbox.dataset.nome = item.nome;
-                checkbox.dataset.emoji = item.emoji;
+                checkbox.dataset.unidade = item.unidade || "un";
                 checkbox.addEventListener("change", function() {
                     quantidade.style.display = this.checked ? "inline-block" : "none";
                 });
 
                 let label = document.createElement("label");
-                label.textContent = `${item.emoji} ${item.nome} (${item.unidade || "un"})`;
+                label.textContent = `${item.nome} (${item.unidade || "un"})`;
 
                 let quantidade = document.createElement("input");
                 quantidade.type = "number";
@@ -37,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 quantidade.value = "1";
                 quantidade.style.display = "none";
                 quantidade.style.width = "50px";
-                quantidade.dataset.nome = item.nome;
-                quantidade.dataset.emoji = item.emoji;
 
-                li.appendChild(checkbox);
-                li.appendChild(label);
-                li.appendChild(quantidade);
+                container.appendChild(checkbox);
+                container.appendChild(label);
+                container.appendChild(quantidade);
+                
+                li.appendChild(container);
                 lista.appendChild(li);
             });
         });
