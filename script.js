@@ -1,69 +1,115 @@
-document.addEventListener("DOMContentLoaded", function() {
+let dadosPorCategoria = {};
+let dadosOriginais = [];
+
+document.addEventListener("DOMContentLoaded", function () {
     fetch("itens.json")
-        .then(response => response.json())
-        .then(data => {
-            // Ordenar por categoria antes de exibir
-            data.sort((a, b) => a.categoria.localeCompare(b.categoria));
+        .then((response) => response.json())
+        .then((data) => {
+            dadosOriginais = data;
 
-            const lista = document.getElementById("lista");
-            let categoriaAtual = "";
-
-            data.forEach(item => {
-                // Adiciona um cabeçalho para cada nova categoria
-                if (item.categoria !== categoriaAtual) {
-                    categoriaAtual = item.categoria;
-                    let header = document.createElement("h3");
-                    header.textContent = `📌 ${categoriaAtual}`;
-                    lista.appendChild(header);
+            // Agrupa os itens por categoria
+            data.forEach((item) => {
+                if (!dadosPorCategoria[item.categoria]) {
+                    dadosPorCategoria[item.categoria] = [];
                 }
-
-                let li = document.createElement("li");
-                li.style.listStyleType = "none"; // Remove os pontos da lista
-                
-                let checkbox = document.createElement("input");
-                checkbox.type = "checkbox";
-                checkbox.dataset.nome = item.nome;
-                checkbox.dataset.emoji = item.emoji;
-                checkbox.addEventListener("change", function() {
-                    quantidade.style.display = this.checked ? "inline-block" : "none";
-                });
-
-                let label = document.createElement("label");
-                label.textContent = `${item.emoji} ${item.nome} (${item.unidade || "un"})`;
-
-                let quantidade = document.createElement("input");
-                quantidade.type = "number";
-                quantidade.min = "1";
-                quantidade.value = "1";
-                quantidade.style.display = "none";
-                quantidade.style.width = "50px";
-                quantidade.dataset.nome = item.nome;
-                quantidade.dataset.emoji = item.emoji;
-
-                li.appendChild(checkbox);
-                li.appendChild(label);
-                li.appendChild(quantidade);
-                lista.appendChild(li);
+                dadosPorCategoria[item.categoria].push(item);
             });
+
+            // Renderiza os cards de categoria
+            renderizarCategorias();
         });
 });
+
+function renderizarCategorias() {
+    const categoriasDiv = document.getElementById("categorias");
+    categoriasDiv.innerHTML = "";
+
+    Object.keys(dadosPorCategoria).forEach((categoria) => {
+        const card = document.createElement("div");
+        card.classList.add("categoria-card");
+        card.innerHTML = `
+        <img src="${categoria}.png" alt="" />
+        
+    `;
+        card.addEventListener("click", () => exibirItensDaCategoria(categoria));
+        categoriasDiv.appendChild(card);
+    });
+
+    document.getElementById("categorias").style.display = "flex";
+    document.getElementById("itensDaCategoria").style.display = "none";
+}
+
+function exibirItensDaCategoria(categoria) {
+    const lista = document.getElementById("lista");
+    const titulo = document.getElementById("tituloCategoria");
+
+    titulo.textContent = `🧾 ${categoria}`;
+    lista.innerHTML = "";
+
+    dadosPorCategoria[categoria].forEach((item, index) => {
+        const li = document.createElement("li");
+        li.classList.add("lista-item");
+
+        const idCheckbox = `chk-${categoria}-${index}`;
+
+        const container = document.createElement("div");
+        container.classList.add("item-container");
+
+        container.innerHTML = `
+      <input type="checkbox" id="${idCheckbox}" data-nome="${item.nome}" data-unidade="${item.unidade || 'un'}">
+      <label for="${idCheckbox}">${item.nome} (${item.unidade || "un"})</label>
+      <div class="quantidade-wrap" style="display: none;">
+        <button class="diminuir">−</button>
+        <input type="number" value="1" min="1">
+        <button class="aumentar">+</button>
+      </div>
+    `;
+
+        const checkbox = container.querySelector("input[type=checkbox]");
+        const quantidadeWrap = container.querySelector(".quantidade-wrap");
+        const inputQuantidade = quantidadeWrap.querySelector("input");
+
+        checkbox.addEventListener("change", function () {
+            quantidadeWrap.style.display = this.checked ? "flex" : "none";
+        });
+
+        quantidadeWrap.querySelector(".aumentar").addEventListener("click", () => {
+            inputQuantidade.value = parseInt(inputQuantidade.value) + 1;
+        });
+
+        quantidadeWrap.querySelector(".diminuir").addEventListener("click", () => {
+            if (parseInt(inputQuantidade.value) > 1) {
+                inputQuantidade.value = parseInt(inputQuantidade.value) - 1;
+            }
+        });
+
+        li.appendChild(container);
+        lista.appendChild(li);
+    });
+
+    document.getElementById("categorias").style.display = "none";
+    document.getElementById("itensDaCategoria").style.display = "block";
+}
+
+function voltarParaCategorias() {
+    renderizarCategorias();
+}
+
 function enviarWhatsApp() {
-    let selecionados = document.querySelectorAll("input[type=checkbox]:checked");
+    const selecionados = document.querySelectorAll(
+        "#itensDaCategoria input[type=checkbox]:checked"
+    );
     let mensagem = "*Minha Lista de Compras*\n\n";
 
-    selecionados.forEach(checkbox => {
-        let quantidadeInput = checkbox.parentNode.querySelector("input[type=number]");
-        let nome = checkbox.dataset.nome;
-        let unidade = checkbox.dataset.unidade || "un";
-        let quantidade = quantidadeInput.value;
+    selecionados.forEach((checkbox) => {
+        const nome = checkbox.dataset.nome;
+        const unidade = checkbox.dataset.unidade || "un";
+        const quantidade =
+            checkbox.parentNode.querySelector("input[type=number]").value;
 
-        // Adiciona os itens sem emojis na mensagem
         mensagem += `- ${nome} (${quantidade} ${unidade})\n`;
     });
 
-    // Codifica corretamente a mensagem e gera o link para WhatsApp
-    let url = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
-    
-    window.open(url, "_blank"); // Abre o WhatsApp com a mensagem pronta
+    const url = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
 }
-

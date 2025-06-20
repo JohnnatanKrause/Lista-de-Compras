@@ -1,310 +1,507 @@
-[
+[    
     {
-        "id": 1,
-        "nome": "Filé Mignon",
-        "emoji": "🥩",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 2,
-        "nome": "Contrafilé",
-        "emoji": "🥩",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 3,
-        "nome": "Alcatra",
-        "emoji": "🥩",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 4,
-        "nome": "Carne Moída",
-        "emoji": "🥩",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 5,
-        "nome": "Bife",
-        "emoji": "🥩",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 6,
-        "nome": "Carne de Panela",
-        "emoji": "🍲",
-        "categoria": "Carnes Bovinas",
-        "unidade": "kg"
-    },
-    {
-        "id": 7,
-        "nome": "Costelinha Suína",
-        "emoji": "🐖",
-        "categoria": "Carnes Suínas",
-        "unidade": "kg"
-    },
-    {
-        "id": 8,
-        "nome": "Peito de Frango",
-        "emoji": "🍗",
-        "categoria": "Carnes de Frango",
-        "unidade": "kg"
-    },
-    {
-        "id": 9,
-        "nome": "Coxa de Frango",
-        "emoji": "🍗",
-        "categoria": "Carnes de Frango",
-        "unidade": "kg"
-    },
-    {
-        "id": 10,
-        "nome": "Sobrecoxa de Frango",
-        "emoji": "🍗",
-        "categoria": "Carnes de Frango",
-        "unidade": "kg"
-    },
-    {
-        "id": 11,
-        "nome": "Tilápia",
-        "emoji": "🐟",
-        "categoria": "Peixes",
-        "unidade": "kg"
-    },
-    {
-        "id": 12,
-        "nome": "Camarão",
-        "emoji": "🦐",
-        "categoria": "Frutos do Mar",
-        "unidade": "kg"
-    },
-    {
-        "id": 13,
-        "nome": "Banana",
-        "emoji": "🍌",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 14,
-        "nome": "Maçã",
-        "emoji": "🍏",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 15,
-        "nome": "Limão",
-        "emoji": "🍋",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 16,
-        "nome": "Laranja",
-        "emoji": "🍊",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 17,
-        "nome": "Uva",
-        "emoji": "🍇",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 18,
-        "nome": "Abacaxi",
-        "emoji": "🍍",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 19,
-        "nome": "Mamão",
-        "emoji": "🥭",
-        "categoria": "Frutas",
-        "unidade": "un"
-    },
-    {
-        "id": 20,
-        "nome": "Morango",
-        "emoji": "🍓",
-        "categoria": "Frutas",
-        "unidade": "kg"
-    },
-    {
-        "id": 21,
-        "nome": "Alface",
-        "emoji": "🥬",
-        "categoria": "Hortifruti",
-        "unidade": "un"
-    },
-    {
-        "id": 22,
-        "nome": "Tomate",
-        "emoji": "🍅",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 23,
-        "nome": "Cenoura",
-        "emoji": "🥕",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 24,
-        "nome": "Batata",
-        "emoji": "🥔",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 25,
-        "nome": "Cebola",
-        "emoji": "🧅",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 26,
-        "nome": "Pimentão",
-        "emoji": "🌶️",
-        "categoria": "Hortifruti",
-        "unidade": "un"
-    },
-    {
-        "id": 27,
-        "nome": "Brócolis",
-        "emoji": "🥦",
-        "categoria": "Hortifruti",
-        "unidade": "un"
-    },
-    {
-        "id": 28,
-        "nome": "Abóbora",
-        "emoji": "🎃",
-        "categoria": "Hortifruti",
-        "unidade": "kg"
-    },
-    {
-        "id": 29,
-        "nome": "Arroz",
-        "emoji": "🍚",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "kg"
-    },
-    {
-        "id": 30,
-        "nome": "Feijão",
-        "emoji": "🥣",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "kg"
-    },
-    {
-        "id": 31,
-        "nome": "Farinha de trigo",
-        "emoji": "🌾",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "kg"
-    },
-    {
-        "id": 32,
-        "nome": "Macarrão",
-        "emoji": "🍝",
-        "categoria": "Grãos e Farináceos",
-        "unidade": "pacote"
-    },
-    {
-        "id": 33,
-        "nome": "Pão",
-        "emoji": "🥖",
-        "categoria": "Padaria",
-        "unidade": "un"
-    },
-    {
-        "id": 34,
-        "nome": "Bolo de caixinha",
-        "emoji": "🍰",
-        "categoria": "Doces e Sobremesas",
-        "unidade": "un"
-    },
-    {
-        "id": 35,
-        "nome": "Creme de leite",
-        "emoji": "🥛",
-        "categoria": "Doces e Sobremesas",
-        "unidade": "lata"
-    },
-    {
-        "id": 36,
-        "nome": "Leite condensado",
-        "emoji": "🥛",
-        "categoria": "Doces e Sobremesas",
-        "unidade": "lata"
-    },
-    {
-        "id": 37,
-        "nome": "Shampoo",
-        "emoji": "🧴",
-        "categoria": "Higiene",
-        "unidade": "frasco"
-    },
-    {
-        "id": 38,
-        "nome": "Condicionador",
-        "emoji": "🧴",
-        "categoria": "Higiene",
-        "unidade": "frasco"
-    },
-    {
-        "id": 39,
-        "nome": "Papel higiênico",
-        "emoji": "🧻",
-        "categoria": "Higiene",
-        "unidade": "pacote"
-    },
-    {
-        "id": 40,
-        "nome": "Água mineral com gás",
-        "emoji": "💧",
-        "categoria": "Bebidas",
-        "unidade": "garrafa"
-    },
-    {
-        "id": 41,
-        "nome": "Café",
-        "emoji": "☕",
-        "categoria": "Bebidas",
-        "unidade": "pacote"
-    },
-    {
-        "id": 42,
-        "nome": "Chá",
-        "emoji": "🍵",
-        "categoria": "Bebidas",
-        "unidade": "pacote"
-    },
-    {
-        "id": 43,
-        "nome": "Suco natural",
-        "emoji": "🥤",
-        "categoria": "Bebidas",
-        "unidade": "litro"
-    },
-    {
-        "id": 44,
         "nome": "Refrigerante",
-        "emoji": "🥤",
         "categoria": "Bebidas",
-        "unidade": "litro"
+        "unidade": "lata",
+        "ordemExibicao": 1
+    },
+    {
+        "nome": "Suco",
+        "categoria": "Bebidas",
+        "unidade": "litro",
+        "ordemExibicao": 1
+    },
+    {
+        "nome": "Água Mineral com Gás",
+        "categoria": "Bebidas",
+        "unidade": "litro",
+        "ordemExibicao": 1
+    },
+    
+    {
+        "nome": "Leite",
+        "categoria": "Bebidas",
+        "unidade": "litro",
+        "ordemExibicao": 1
+    },
+    {
+        "nome": "Vinho",
+        "categoria": "Bebidas",
+        "unidade": "garrafa",
+        "ordemExibicao": 1
+    },
+    {
+        "nome": "Chá",
+        "categoria": "Bebidas",
+        "unidade": "pacote",
+        "ordemExibicao": 1
+    },
+    {
+        "nome": "Presunto Fatiado",
+        "categoria": "Carnes",
+        "unidade": "pacote",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Calabresa",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Filé Mignon",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Contra filé",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Alcatra",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Carne Moída",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Bife Bovino",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Carne de Panela",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Costelinha Suína",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Peito de Frango",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Coxa de Frango",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Sobrecoxa de Frango",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Tilápia",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Camarão",
+        "categoria": "Carnes",
+        "unidade": "kg",
+        "ordemExibicao": 2
+    },
+    {
+        "nome": "Queijo Ralado",
+        "categoria": "Laticínios",
+        "unidade": "pacote",
+        "ordemExibicao": 3
+    },
+    {
+        "nome": "Queijo Fatiado",
+        "categoria": "Laticínios",
+        "unidade": "pacote",
+        "ordemExibicao": 3
+    },
+    {
+        "nome": "Banana",
+        "categoria": "Frutas",
+        "unidade": "kg",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Maçã",
+        "categoria": "Frutas",
+        "unidade": "kg",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Limão",
+        "categoria": "Frutas",
+        "unidade": "un",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Laranja",
+        "categoria": "Frutas",
+        "unidade": "un",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Uva",
+        "categoria": "Frutas",
+        "unidade": "kg",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Abacaxi",
+        "categoria": "Frutas",
+        "unidade": "un",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Mamão",
+        "categoria": "Frutas",
+        "unidade": "un",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Morango",
+        "categoria": "Frutas",
+        "unidade": "kg",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Caqui",
+        "categoria": "Frutas",
+        "unidade": "kg",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Abacate",
+        "categoria": "Frutas",
+        "unidade": "kg",
+        "ordemExibicao": 4
+    },
+    {
+        "nome": "Alface",
+        "categoria": "Hortifruti",
+        "unidade": "un",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Tomate",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Cenoura",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Batata",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Cebola",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Alho",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Pimentão",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Brócolis",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Abóbora",
+        "categoria": "Hortifruti",
+        "unidade": "kg",
+        "ordemExibicao": 5
+    },
+    {
+        "nome": "Arroz",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "kg",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Feijão",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "kg",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Farinha de Trigo",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "kg",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Farinha Lacta",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "pacote",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Açúcar",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "kg",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Macarrão",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "pacote",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Barra de Cereal",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "barra",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Granola",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "pacote",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Bolacha",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "pacote",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Milho de Pipoca",
+        "categoria": "Grãos e Farináceos",
+        "unidade": "pacote",
+        "ordemExibicao": 6
+    },
+    {
+        "nome": "Pão",
+        "categoria": "Padaria",
+        "unidade": "un",
+        "ordemExibicao": 7
+    },
+    {
+        "nome": "Bolo de Caixinha",
+        "categoria": "Padaria",
+        "unidade": "pacote",
+        "ordemExibicao": 7
+    },
+    {
+        "nome": "Castanha do Pará",
+        "categoria": "Oleaginosas",
+        "unidade": "pacote",
+        "ordemExibicao": 8
+    },
+    {
+        "nome": "Castanha de Caju",
+        "categoria": "Oleaginosas",
+        "unidade": "pacote",
+        "ordemExibicao": 8
+    },
+    {
+        "nome": "Ketchup",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "frasco",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Maionese",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "frasco",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Molho de Tomate",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "frasco",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Açafrão",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Orégano",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Pimenta do Reino",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Vinagre",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "frasco",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Óleo de Soja",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "litro",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Páprica",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Chimichurri",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Sal",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Adoçante",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "frasco",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Batata Palha",
+        "categoria": "Condimentos & Temperos",
+        "unidade": "pacote",
+        "ordemExibicao": 9
+    },
+    {
+        "nome": "Creme de Leite",
+        "categoria": "Doces e Sobremesas",
+        "unidade": "lata",
+        "ordemExibicao": 10
+    },
+    {
+        "nome": "Leite Condensado",
+        "categoria": "Doces e Sobremesas",
+        "unidade": "lata",
+        "ordemExibicao": 10
+    },
+    {
+        "nome": "Mel",
+        "categoria": "Doces e Sobremesas",
+        "unidade": "frasco",
+        "ordemExibicao": 10
+    },
+    {
+        "nome": "Detergente",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "frasco",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Sabão em Pó",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "pacote",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Shampoo",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "frasco",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Condicionador",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "frasco",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Sabonete",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "un",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Gel",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "un",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Barbeador",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "un",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Papel Toalha",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "pacote",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Papel Higiênico",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "pacote",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Sabão de Lavar Roupas",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "pacote",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Sabão de Lavar Louça",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "barra",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Desinfetante",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "frasco",
+        "ordemExibicao": 11
+    },
+    {
+        "nome": "Esponja de Lavar Louça",
+        "categoria": "Higiene e Limpeza",
+        "unidade": "un",
+        "ordemExibicao": 11
     }
 ]

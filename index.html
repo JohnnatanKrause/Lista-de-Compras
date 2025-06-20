@@ -1,17 +1,35 @@
+</html>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado na Mão 🛒</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <div class="container">
-        <h1>🛒 Lista de Compras</h1>
-        <ul id="lista"></ul>
-        <button onclick="enviarWhatsApp()">📲 Enviar</button>
+        <h1>🛍️ Mercado na Mão</h1>
+
+        <!-- Grade de categorias -->
+        <div id="categorias" class="grid-categorias"></div>
+
+        <!-- Seção de itens (escondida inicialmente) -->
+        <div id="itensDaCategoria" class="itens-categoria" style="display: none;">
+            <h2 id="tituloCategoria">Itens</h2>
+            <ul id="lista" class="lista-itens"></ul>
+            <button onclick="voltarParaCategorias()">⬅️ Voltar</button>
+        </div>
+
+        <!-- Botão flutuante para enviar no WhatsApp -->
+        <button id="enviar" onclick="enviarWhatsApp()" style="margin-top: 30px;">
+            📤 Enviar Lista para WhatsApp
+        </button>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
