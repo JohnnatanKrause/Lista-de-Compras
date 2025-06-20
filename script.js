@@ -1,5 +1,6 @@
 let dadosPorCategoria = {};
 let dadosOriginais = [];
+let carrinho = [];
 
 document.addEventListener("DOMContentLoaded", function () {
     fetch("itens.json")
@@ -7,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
             dadosOriginais = data;
 
-            // Agrupa os itens por categoria
             data.forEach((item) => {
                 if (!dadosPorCategoria[item.categoria]) {
                     dadosPorCategoria[item.categoria] = [];
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 dadosPorCategoria[item.categoria].push(item);
             });
 
-            // Renderiza os cards de categoria
             renderizarCategorias();
         });
 });
@@ -27,10 +26,7 @@ function renderizarCategorias() {
     Object.keys(dadosPorCategoria).forEach((categoria) => {
         const card = document.createElement("div");
         card.classList.add("categoria-card");
-        card.innerHTML = `
-        <img src="${categoria}.png" alt="" />
-        
-    `;
+        card.innerHTML = `<img src="${categoria}.png" alt="" />`;
         card.addEventListener("click", () => exibirItensDaCategoria(categoria));
         categoriasDiv.appendChild(card);
     });
@@ -56,14 +52,14 @@ function exibirItensDaCategoria(categoria) {
         container.classList.add("item-container");
 
         container.innerHTML = `
-      <input type="checkbox" id="${idCheckbox}" data-nome="${item.nome}" data-unidade="${item.unidade || 'un'}">
-      <label for="${idCheckbox}">${item.nome} (${item.unidade || "un"})</label>
-      <div class="quantidade-wrap" style="display: none;">
-        <button class="diminuir">−</button>
-        <input type="number" value="1" min="1">
-        <button class="aumentar">+</button>
-      </div>
-    `;
+            <input type="checkbox" id="${idCheckbox}" data-nome="${item.nome}" data-unidade="${item.unidade || 'un'}">
+            <label for="${idCheckbox}">${item.nome} (${item.unidade || "un"})</label>
+            <div class="quantidade-wrap" style="display: none;">
+                <button class="diminuir">−</button>
+                <input type="number" value="1" min="1">
+                <button class="aumentar">+</button>
+            </div>
+        `;
 
         const checkbox = container.querySelector("input[type=checkbox]");
         const quantidadeWrap = container.querySelector(".quantidade-wrap");
@@ -87,6 +83,34 @@ function exibirItensDaCategoria(categoria) {
         lista.appendChild(li);
     });
 
+    // Cria o botão Inserir no Carrinho uma única vez
+    if (!document.getElementById("botaoCarrinho")) {
+        const btnInserir = document.createElement("button");
+        btnInserir.id = "botaoCarrinho";
+        btnInserir.textContent = "🛒 Inserir no Carrinho";
+        btnInserir.style.marginTop = "20px";
+        btnInserir.onclick = function () {
+            const selecionados = document.querySelectorAll("#itensDaCategoria input[type=checkbox]:checked");
+            selecionados.forEach((checkbox) => {
+                const nome = checkbox.dataset.nome;
+                const unidade = checkbox.dataset.unidade || "un";
+                const quantidade = checkbox.parentNode.querySelector("input[type=number]").value;
+
+                const existe = carrinho.find(item => item.nome === nome);
+                if (!existe) {
+                    carrinho.push({ nome, unidade, quantidade });
+                }
+            });
+
+            mostrarToast("Itens adicionados ao carrinho! 🛒");
+            setTimeout(() => {
+                voltarParaCategorias();
+            }, 1500);
+        };
+
+        document.getElementById("itensDaCategoria").appendChild(btnInserir);
+    }
+
     document.getElementById("categorias").style.display = "none";
     document.getElementById("itensDaCategoria").style.display = "block";
 }
@@ -96,20 +120,26 @@ function voltarParaCategorias() {
 }
 
 function enviarWhatsApp() {
-    const selecionados = document.querySelectorAll(
-        "#itensDaCategoria input[type=checkbox]:checked"
-    );
+    if (carrinho.length === 0) {
+        alert("Seu carrinho está vazio 😕");
+        return;
+    }
+
     let mensagem = "*Minha Lista de Compras*\n\n";
 
-    selecionados.forEach((checkbox) => {
-        const nome = checkbox.dataset.nome;
-        const unidade = checkbox.dataset.unidade || "un";
-        const quantidade =
-            checkbox.parentNode.querySelector("input[type=number]").value;
-
-        mensagem += `- ${nome} (${quantidade} ${unidade})\n`;
+    carrinho.forEach((item) => {
+        mensagem += `- ${item.nome} (${item.quantidade} ${item.unidade})\n`;
     });
 
     const url = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
+}
+
+function mostrarToast(mensagem) {
+    const toast = document.getElementById("toast");
+    toast.textContent = mensagem;
+    toast.style.display = "block";
+    setTimeout(() => {
+        toast.style.display = "none";
+    }, 2000);
 }
